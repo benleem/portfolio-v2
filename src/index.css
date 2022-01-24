@@ -1,0 +1,19 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    border-spacing: 0;   
+}
+
+body{
+    background-color: rgb(18,15,17);
+}
+
+.Projects,.About,.Contact{
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Montserrat', sans-serif;
+}

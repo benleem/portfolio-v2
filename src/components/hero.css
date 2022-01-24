@@ -1,0 +1,30 @@
+.hero{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(18,15,17);
+    color: white;
+}
+
+.hero h1{
+    font-family: 'Kanit', sans-serif;
+    font-weight: 600;
+    font-size: 60px;
+}
+
+.hero h3{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    max-width: 450px;
+}
+
+.hero img{
+    transform: rotate(180deg);
+    position: fixed;
+    bottom: 0;
+    min-width: 1000px;
+}

@@ -1,0 +1,36 @@
+.header{
+    width: 100vw;
+    height: 75px;
+    /* background-color: rgb(18,15,17); */
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.header a{
+    color: white;
+    text-decoration: none;
+    font-family: 'Kanit', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.nav-list a{
+    margin-left: 10px;
+    /* border-bottom:0px;
+    transition: 0.3s ease-in-out; */
+}
+
+.nav-list a:hover{
+    border-bottom: 1px solid white;
+    color: white;
+    /* transition: 0.3s ease-in-out; */
+}
+
+
+.nav-list a.nav-home{
+    margin-left: 0;
+}
+
