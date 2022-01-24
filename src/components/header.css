@@ -1,36 +1,111 @@
 .header{
     width: 100vw;
-    height: 75px;
-    /* background-color: rgb(18,15,17); */
+    background-color: #41007A;
     position: fixed;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0 20px;
+    transform: translate3d(0,0,0);
+    z-index: 9999;
 }
 
 .header a{
-    color: white;
     text-decoration: none;
     font-family: 'Kanit', sans-serif;
     font-weight: 600;
-    font-size: 16px;
+    padding: 0px;
+}
+
+.mobile-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.logo{
+    color: white;
+    font-size: 35px;
+    transition: all .3s ease-in-out;
+}
+
+.logo:hover{
+    color: rgb(18,15,17);
+}
+
+.nav-toggle{
+    display: none;
 }
 
 .nav-list a{
     margin-left: 10px;
-    /* border-bottom:0px;
-    transition: 0.3s ease-in-out; */
+    font-size: 16px;
+    color: white;
+}
+
+.nav-list a:first-child{
+    margin-left: 0px;
 }
 
 .nav-list a:hover{
     border-bottom: 1px solid white;
     color: white;
-    /* transition: 0.3s ease-in-out; */
 }
 
 
-.nav-list a.nav-home{
-    margin-left: 0;
-}
+@media screen and (max-width: 400px){
+    .header{
+        flex-direction: column;
+    }
 
+    .header.active{
+        height: 100vh;
+    }
+
+    .nav-toggle{
+        display: flex;
+        background-color: #41107A;
+        border: none;
+        cursor: pointer;
+        transition: all .3s ease-in-out;
+    }
+
+    .nav-toggle:hover{
+        transform: rotate(10deg);
+    }
+
+    .nav-toggle.active{
+        transform: rotate(45deg);
+    }
+
+    .nav-toggle img{
+        max-width: 30px;
+        border: 2px solid white;
+        border-radius: 50%;
+        background-color: none;
+    }
+
+    .nav-list{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+    }
+
+    .nav-list.active{
+        display: none;
+    }
+
+    .nav-list a{
+        margin-left: 0px;
+        text-align: center;
+        margin: 20px 0;
+        font-size: 20px;
+    }
+
+    .nav-list a:last-child{
+        margin-bottom: 10px;
+    }
+}

@@ -24,7 +24,9 @@
 
 .hero img{
     transform: rotate(180deg);
-    position: fixed;
+    transform-style: flat;
+    position: absolute;
     bottom: 0;
-    min-width: 1000px;
+    display: inline-block;
+    /* min-width: 1000px; */
 }
