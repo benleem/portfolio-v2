@@ -21,10 +21,10 @@ const Header = ({ location }) => {
                 <button className={active ? 'nav-toggle' : 'nav-toggle active' } onClick={()=>{setActive(!active)}}><img src="./img/toggle.svg" alt="" /></button>
             </div>
             <div className={active ? 'nav-list active': 'nav-list'}>
-                <Link className="nav home" onClick={()=>{setActive(!active)}} style={location === '/' ? {borderBottom:'1px solid white'} : null} to="/">Home</Link>
-                <Link className="nav about" onClick={()=>{setActive(!active)}} style={location === '/about' ? {borderBottom:'1px solid white'} : null} to="/about">About</Link>
-                <Link className="nav projects" onClick={()=>{setActive(!active)}} style={location === '/projects' ? {borderBottom:'1px solid white'} : null} to="/projects">Projects</Link>
-                <Link className="nav contact" onClick={()=>{setActive(!active)}} style={location === '/contact' ? {borderBottom:'1px solid white'} : null} to="/contact">Contact</Link>
+                <Link className="nav home" onClick={()=>{setActive(!active)}} style={location === '/' ? {boxShadow: '0 4px 0px -2px white'} : null} to="/">Home</Link>
+                <Link className="nav about" onClick={()=>{setActive(!active)}} style={location === '/about' ? {boxShadow: '0 4px 0px -2px white'} : null} to="/about">About</Link>
+                <Link className="nav projects" onClick={()=>{setActive(!active)}} style={location === '/projects' ? {boxShadow: '0 4px 0px -2px white'} : null} to="/projects">Projects</Link>
+                <Link className="nav contact" onClick={()=>{setActive(!active)}} style={location === '/contact' ? {boxShadow: '0 4px 0px -2px white'} : null} to="/contact">Contact</Link>
             </div>
         </div>
     );
