@@ -1,6 +1,5 @@
 .header{
     width: 100vw;
-    background-color: #41007A;
     position: fixed;
     display: flex;
     justify-content: space-between;
@@ -31,7 +30,7 @@
 }
 
 .logo:hover{
-    color: rgb(18,15,17);
+    transform: rotate(-15deg);
 }
 
 .nav-toggle{
@@ -64,11 +63,12 @@
 
     .header.active{
         height: 100vh;
+        background-color: rgb(18,15,17);
     }
 
     .nav-toggle{
         display: flex;
-        background-color: #41107A;
+        background-color: rgb(200, 0, 0, 0);
         border: none;
         cursor: pointer;
         transition: all .3s ease-in-out;

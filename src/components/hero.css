@@ -5,7 +5,6 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    background-color: rgb(18,15,17);
     color: white;
 }
 
@@ -21,18 +20,10 @@
     font-size: 20px;
 }
 
-.hero img{
+.waves{
     transform: rotate(180deg);
     transform-style: flat;
     position: absolute;
     bottom: 0;
     display: inline-block;
-}
-
-.hero-text-container{
-    display: flex;
-}
-
-.hero-text-container span:first-child{
-    padding-left: 5px;
 }
