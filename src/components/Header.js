@@ -17,7 +17,7 @@ const Header = ({ location }) => {
     return (
         <div className={active ? 'header' : 'header active'}>
             <div className="mobile-header">
-                <Link className="logo" to="/">BM</Link>
+                <Link className="logo" onClick={() =>{setActive(true)}} to="/">BM</Link>
                 <button className={active ? 'nav-toggle' : 'nav-toggle active' } onClick={()=>{setActive(!active)}}><img src="./img/toggle.svg" alt="" /></button>
             </div>
             <div className={active ? 'nav-list active': 'nav-list'}>
