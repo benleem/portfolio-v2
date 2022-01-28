@@ -6,18 +6,38 @@
     align-items: center;
     text-align: center;
     color: white;
+    font-size: 1rem;
 }
 
 .hero h1{
     font-family: 'Kanit', sans-serif;
     font-weight: 600;
-    font-size: 60px;
+    font-size: 4em;
 }
 
 .hero h3{
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
-    font-size: 20px;
+    font-size: 1.4em;
+}
+
+.socials{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.socials img{
+    max-width: 25px;
+    display: inline-block;
+}
+
+.socials a{
+    max-height: 25px;
+}
+
+.socials a:nth-child(2){
+    margin: 0 1rem;
 }
 
 .waves{
@@ -26,4 +46,11 @@
     position: absolute;
     bottom: 0;
     display: inline-block;
+}
+
+@media screen and (max-width: 500px){
+    .hero{
+        font-size: .5rem;
+    }
+
 }

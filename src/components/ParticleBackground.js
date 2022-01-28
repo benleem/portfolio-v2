@@ -28,39 +28,39 @@ const ParticleBackground = () => {
                     particles: {
                         color: { value: "#41107A" },
                         move: {
-                        direction: "none",
-                        enable: true,
-                        outModes: "out",
-                        random: false,
-                        speed: 2,
-                        straight: false
+                            direction: "none",
+                            enable: true,
+                            outModes: "out",
+                            random: false,
+                            speed: 2,
+                            straight: false
                         },
                         number: {
-                        density: {
-                            enable: true,
-                            area: 800
-                        },
-                        value: 80
+                            density: {
+                                enable: true,
+                                area: 900
+                            },
+                            value: 80
                         },
                         opacity: {
-                        animation: {
-                            enable: true,
-                            speed: 0.05,
-                            sync: true,
-                            startValue: "max",
-                            count: 1,
-                            destroy: "min"
-                        },
-                        value: {
-                            min: 0,
-                            max: 1
-                        }
+                            animation: {
+                                enable: true,
+                                speed: 0.05,
+                                sync: true,
+                                startValue: "max",
+                                count: 1,
+                                destroy: "min"
+                            },
+                            value: {
+                                min: 0,
+                                max: 1
+                            }
                         },
                         shape: {
-                        type: "circle"
+                            type: "circle"
                         },
                         size: {
-                        value: { min: 1, max: 5 }
+                            value: { min: 1, max: 5 }
                         }
                     }
                 }}

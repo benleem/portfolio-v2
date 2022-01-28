@@ -1,7 +1,11 @@
+import TopBanner from "../components/TopBanner";
+
 const Contact = () => {
+    const title = 'Contact Me'
+
     return (
         <div className="Contact">
-            <p>This is the contact page</p> 
+            <TopBanner title={title}/>
         </div>
     );
 };

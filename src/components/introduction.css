@@ -1,0 +1,48 @@
+.introduction{
+    max-width: 1200px;
+    margin: auto;
+    padding-bottom: 100px;
+}
+
+.introduction h1{
+    line-height:1.5;
+}
+
+.introduction p{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.introduction-sub-title{
+    font-size: 1.12rem;
+    font-weight: 500;
+}
+
+.introduction-description{
+    line-height: 1.5;
+    padding: 0.5rem 0;
+    font-weight: 300;
+}
+
+.introduction-button{
+    font-family: 'Kanit', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: black;
+    background-color: white;
+    cursor: pointer;
+    border: none;
+    padding: 1rem;
+    transition: all .3s ease-in-out;
+}
+
+.introduction-button:hover{
+    background-color: black;
+    color: white;
+}
+
+@media screen and (max-width: 1200px){
+    .introduction{
+        padding: 0 3%;
+        padding-bottom: 100px;
+    }
+}

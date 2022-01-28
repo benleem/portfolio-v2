@@ -1,0 +1,9 @@
+.top-banner h1{
+    height: 30vh;
+    font-size: 3.5rem;
+    font-weight: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #41107A;
+}

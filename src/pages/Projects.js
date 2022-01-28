@@ -1,7 +1,11 @@
+import TopBanner from "../components/TopBanner";
+
 const Projects = () => {
+    const title = 'My Projects';
+
     return (
         <div className="Projects">
-            <p>This is the projects page</p>
+            <TopBanner title={title}/>
         </div>
     );
 };
