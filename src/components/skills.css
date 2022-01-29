@@ -1,0 +1,49 @@
+
+.skills{
+    min-width: 400px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: fit-content fit-content;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    padding-left: 1.5rem;
+    height: fit-content;
+}
+
+.skills p{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
+
+.col1{
+    display: flex;
+}
+
+.skills-text{
+    width: max-content;
+    
+}
+
+.tools-text{
+    text-align: end;
+    width: max-content;
+    width: 100%;
+}
+
+.col2{
+    height: fit-content;
+}
+
+@media screen and (max-width: 800px){
+    .skills{
+        padding: 3rem 0;
+    }
+
+
+}
+
+@media screen and (max-width: 400px){
+    .skills{
+        min-width: 0;
+    }
+}

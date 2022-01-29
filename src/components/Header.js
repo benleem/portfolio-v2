@@ -16,7 +16,7 @@ const Header = ({ location }) => {
     }, [])
 
     return (
-        <div className={active ? 'header' : 'header active'} style={location.pathname === '/' ? {backgroundColor:'none'} : null}>
+        <div className={active ? 'header' : 'header active'} style={location === '/' ? {backgroundColor:'rgb(18,15,17)'} : {backgroundColor:'#41007A'}}>
             <div className="mobile-header">
                 <motion.div
                 whileHover={{scale:1.1}}

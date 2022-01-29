@@ -1,0 +1,25 @@
+.about{
+    background-color: #41007A;
+}
+
+.about-container{
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    padding-bottom: 3rem;
+    align-items: center;
+}
+
+@media screen and (max-width: 1200px){
+    .about-container{
+        padding: 0 3%;
+        padding-bottom: 3rem;
+    }
+}
+
+@media screen and (max-width: 800px){
+    .about-container{
+        padding-bottom: 0;
+        flex-direction: column;
+    }
+}

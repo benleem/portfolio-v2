@@ -1,11 +1,16 @@
 .introduction{
-    max-width: 1200px;
-    margin: auto;
-    padding-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+}
+
+.introduction span{
+    transition: all .3s ease-in-out;
 }
 
 .introduction h1{
-    line-height:1.5;
+    line-height:1;
+    font-size: 3rem;
 }
 
 .introduction p{
@@ -13,19 +18,27 @@
 }
 
 .introduction-sub-title{
-    font-size: 1.12rem;
+    line-height: 1.3;
+    font-size: 1.5rem;
     font-weight: 500;
 }
 
 .introduction-description{
+    font-size: 1.25rem;
     line-height: 1.5;
-    padding: 0.5rem 0;
+    padding: 0.8rem 0;
+    padding-top: 0.2rem;
     font-weight: 300;
+}
+
+.introduction a{
+    width: max-content;
 }
 
 .introduction-button{
     font-family: 'Kanit', sans-serif;
-    font-size: 1.2rem;
+    width: fit-content;
+    font-size: 1.5rem;
     font-weight: 500;
     color: black;
     background-color: white;
@@ -38,11 +51,4 @@
 .introduction-button:hover{
     background-color: black;
     color: white;
-}
-
-@media screen and (max-width: 1200px){
-    .introduction{
-        padding: 0 3%;
-        padding-bottom: 100px;
-    }
 }

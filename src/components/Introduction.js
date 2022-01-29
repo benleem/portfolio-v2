@@ -1,20 +1,21 @@
 import { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 import './introduction.css';
 
 const Introduction = () => {
-    const [currentColor, setCurrentColor] = useState('#2B8A9E');
-    const colors = ['#B614D3', '#4EDE59','#FFCD3D', '#DF2038'];
+    const [currentColor, setCurrentColor] = useState();
+    const colors = ['#2B8A9E', '#B614D3', '#4EDE59','#FFCD3D', '#DF2038'];
     let i = 0;
     
     const changeColor = () => {
-        if(i < colors.length){
+        if(i <= colors.length){
             setCurrentColor(colors[i]);
             i++
-            setTimeout(changeColor, 800);
+            setTimeout(changeColor, 900);
         }
         else{
             i=0;
-            setTimeout(changeColor, 50);
+            setTimeout(changeColor, 100);
         }
     }
 
@@ -31,7 +32,9 @@ const Introduction = () => {
                 APIs in the front-end to create a seamless user experience. Learning new technologies is my passion, 
                 and I'm always looking for new ways to improve my toolkit.
             </p>
-            <button className='introduction-button'>Contact me</button>
+            <Link to='/contact'>
+                <button className='introduction-button'>Contact me</button>
+            </Link>
         </div>
     );
 };

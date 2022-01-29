@@ -1,13 +1,11 @@
 import Hero from "../components/Hero";
-import Introduction from "../components/Introduction"
+import About from "../components/About";
 
 const Home = () => {
     return (
         <div className="Home">
             <Hero/>
-            <div style={{backgroundColor:'#41007A'}}>
-                <Introduction/>
-            </div>
+            <About/>
         </div>
     );
 };
