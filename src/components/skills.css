@@ -1,13 +1,13 @@
 
 .skills{
-    min-width: 400px;
+    /* min-width: 400px; */
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: fit-content fit-content;
     grid-column-gap: 0px;
     grid-row-gap: 0px;
-    padding-left: 1.5rem;
     height: fit-content;
+    min-width: fit-content;
 }
 
 .skills p{
@@ -37,13 +37,5 @@
 @media screen and (max-width: 800px){
     .skills{
         padding: 3rem 0;
-    }
-
-
-}
-
-@media screen and (max-width: 400px){
-    .skills{
-        min-width: 0;
     }
 }

@@ -1,12 +1,13 @@
 import {
   Routes,
   Route,
-  useLocation
+  useLocation,
 } from "react-router-dom";
 import Home from './pages/Home';
 import Projects from './pages/Projects';
 import Contact from './pages/Contact';
 import Header from "./components/Header";
+import { useState } from "react";
 
 function App() {
   const location = useLocation().pathname;

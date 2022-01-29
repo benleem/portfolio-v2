@@ -21,12 +21,15 @@ const Introduction = () => {
 
     useEffect(() => {
         changeColor();
-    }, []);
+        return () => {
+            setCurrentColor({});
+        };
+    },[]);
 
     return (
         <div className='introduction'>
             <h1 className='introduction-title'>Hi. I'm  <span style={{color: currentColor}}>Ben</span>,</h1>
-            <p className='introduction-sub-title'>a <span style={{color: currentColor}}>front-end</span> web developer and advocate for the JAM stack.</p>
+            <p className='introduction-sub-title'>a <span style={{color: currentColor}}>front-end</span> web developer, and advocate for the JAM stack.</p>
             <p className='introduction-description'>
                 I specialize in utilizing 
                 APIs in the front-end to create a seamless user experience. Learning new technologies is my passion, 

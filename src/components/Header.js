@@ -1,9 +1,9 @@
 import { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+import { Link} from "react-router-dom";
 import { motion } from "framer-motion";
 import './header.css'
 
-const Header = ({ location }) => {
+const Header = ({ location}) => {
     const [active, setActive] = useState(true);
 
     useEffect(() => {
