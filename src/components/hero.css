@@ -45,7 +45,7 @@
     transform-style: flat;
     position: absolute;
     bottom: 0;
-    display: inline-block;
+    display: block;
 }
 
 @media screen and (max-width: 500px){

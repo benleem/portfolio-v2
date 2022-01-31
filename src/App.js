@@ -13,7 +13,7 @@ function App() {
   const location = useLocation().pathname;
 
   return (
-    <div className="App" onKeyDown={(e) => (console.log(e))}>
+    <div className="App">
       <Header location={location}/>
       <Routes>
         <Route exact path="/" element={<Home/>}/>
