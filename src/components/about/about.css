@@ -22,4 +22,7 @@
         padding-bottom: 0;
         flex-direction: column;
     }
+    .about-container:last-child{
+        align-items: flex-end; 
+    }
 }

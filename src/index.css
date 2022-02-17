@@ -19,6 +19,13 @@ h1{
     font-family: 'Kanit', sans-serif;
 }
 
+/* #years{max-width: 1200px; width: 100%; margin: auto;}
+
+#years a{
+    margin-left: 10px;
+    display: inline-block;
+} */
+
 /* @media screen and (max-width: 500px){
     html{
         font-size: .7rem;

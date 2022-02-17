@@ -37,6 +37,7 @@
 }
 
 .introduction-button{
+    text-decoration: none;
     font-family: 'Kanit', sans-serif;
     width: fit-content;
     font-size: 1.5rem;

@@ -1,5 +1,4 @@
 import { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
 import './introduction.css';
 
 const Introduction = () => {
@@ -35,9 +34,7 @@ const Introduction = () => {
                 APIs in the front-end to create a seamless user experience. Learning new technologies is my passion, 
                 and I'm always looking for new ways to improve my toolkit.
             </p>
-            <Link to='/contact'>
-                <button className='introduction-button'>Contact me</button>
-            </Link>
+            <a className='introduction-button' href="mailto: benmarshall.dev@gmail.com">Contact Me</a>
         </div>
     );
 };

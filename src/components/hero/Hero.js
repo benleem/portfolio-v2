@@ -1,4 +1,3 @@
-import { Link } from 'react-router-dom';
 import { Typewriter } from 'react-simple-typewriter';
 import ParticleBackground from './ParticleBackground';
 import { motion } from "framer-motion"
@@ -15,9 +14,9 @@ const Hero = () => {
             transition={{type: 'spring', duration: 1.7, bounce: .3}}
             >
                 <div className='socials'>
-                    <a href="https://www.linkedin.com/in/benjamin-marshall-609906196/" target='_blank'><img src="./img/linkdin.png" alt="Linked In" /></a>
-                    <a href="https://github.com/benleem" target='_blank'><img src="./img/github.png" alt="Git Hub" /></a>
-                    <Link to='/contact'><img src="./img/email.png" alt="contact" /></Link>
+                    <a href="https://www.linkedin.com/in/benjamin-marshall-609906196/" target='_blank' rel="noreferrer"><img src="./img/linkdin.png" alt="Linked In" /></a>
+                    <a href="https://github.com/benleem" target='_blank' rel="noreferrer"><img src="./img/github.png" alt="Git Hub" /></a>
+                    <a href="mailto: benmarshall.dev@gmail.com"><img src="./img/email.png" alt="contact" /></a>
                 </div>
                 <h1>{name}</h1>
                 <h3>

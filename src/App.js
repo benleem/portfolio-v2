@@ -5,9 +5,7 @@ import {
 } from "react-router-dom";
 import Home from './pages/Home';
 import Projects from './pages/Projects';
-import Contact from './pages/Contact';
-import Header from "./components/Header";
-import { useState } from "react";
+import Header from "./components/header/Header";
 
 function App() {
   const location = useLocation().pathname;
@@ -18,7 +16,6 @@ function App() {
       <Routes>
         <Route exact path="/" element={<Home/>}/>
         <Route path="/projects" element={<Projects/>}/>
-        <Route path="/contact" element={<Contact/>}/>
       </Routes>
     </div>
   );
