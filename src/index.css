@@ -3,20 +3,20 @@
     rgb(18,15,17)
 */
 
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    border-spacing: 0; 
-    color: white;  
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	border-spacing: 0;
+	color: white;
 }
 
-body{
-    background-color: rgb(18,15,17);
+body {
+	background-color: #121212;
 }
 
-h1{
-    font-family: 'Kanit', sans-serif;
+h1 {
+	font-family: "Kanit", sans-serif;
 }
 
 /* #years{max-width: 1200px; width: 100%; margin: auto;}

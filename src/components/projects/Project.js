@@ -1,23 +1,26 @@
-import { Link } from 'react-router-dom';
-import './project.css';
+import { Link } from "react-router-dom";
+import "./project.css";
 
-const Project = ({ name, siteUrl, githubUrl }) => {
-    return (
-        <div className="project">
-            <div className='project-card'>
-                <img src="./img/placeholder.jpeg" alt="project" />
-                <div className='centered-items'>
-                    <p>{name}</p>
-                    <a href={siteUrl} target='_blank' rel="noreferrer">
-                        <button className='live-site'>Live Site</button> 
-                    </a>
-                    <a href={githubUrl} target='_blank' rel="noreferrer">
-                        <button className='github'>GitHub</button> 
-                    </a>
-                </div> 
-            </div>
-        </div>
-    );
+const Project = ({ name, img, siteUrl, githubUrl, desc }) => {
+	return (
+		<div className="project">
+			<div className="project-card">
+				<img src={img} alt="project" />
+				<div className="centered-items">
+					<p className="project-name">{name}</p>
+					<p className="description">{desc}</p>
+					<div className="links">
+						<a href={siteUrl} target="_blank" rel="noreferrer">
+							Live Site
+						</a>
+						<a href={githubUrl} target="_blank" rel="noreferrer">
+							GitHub
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	);
 };
 
 export default Project;

@@ -3,9 +3,9 @@ import {
   Route,
   useLocation,
 } from "react-router-dom";
-import Home from './pages/Home';
-import Projects from './pages/Projects';
-import Header from "./components/header/Header";
+import Home from '../pages/Home';
+import Projects from '../pages/Projects';
+import Header from "./header/Header";
 
 function App() {
   const location = useLocation().pathname;
