@@ -15,6 +15,11 @@
 	background-color: #41007a;
 }
 
+.project-card img {
+	max-width: 600px;
+	width: 100%;
+}
+
 .project-card:hover img {
 	transition: all 0.3s ease-in-out;
 	opacity: 0.35;
