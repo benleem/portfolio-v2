@@ -6,12 +6,12 @@ const Projects = () => {
 		{
 			name: "Chirp",
 			img: "./img/social.webp",
-			siteUrl: "/",
+			siteUrl: "https://chirp-social.vercel.app/",
 			githubUrl: "https://github.com/benleem/chirp",
 			desc: "Chirp is a social media website built with tools like NextJs",
 		},
 		{
-			name: "Google Earth Clone",
+			name: "Goggle Earth",
 			img: "./img/earth.webp",
 			siteUrl: "https://goggle-earth.netlify.app/",
 			githubUrl: "https://github.com/benleem/threejs-test",
@@ -23,7 +23,7 @@ const Projects = () => {
 			siteUrl: "https://cryptosnapshot.netlify.app/",
 			githubUrl:
 				"https://github.com/benleem/crypto_snapshot/tree/main/cryptosnapshot",
-			desc: "Example",
+			desc: "Search for your favorite coin to keep up with the current value!",
 		},
 		{
 			name: "Portfolio",
