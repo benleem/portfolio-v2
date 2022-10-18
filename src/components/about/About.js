@@ -8,7 +8,6 @@ const About = () => {
 			<div className="about-container">
 				<Introduction />
 				<Skills />
-				{"Hello"}
 			</div>
 		</div>
 	);
